@@ -1,0 +1,37 @@
+name: whatsup
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.4.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  get: ^4.6.6
+  intl: ^0.19.0
+  flutter_svg: ^2.0.10+1
+  flutter_animate: ^4.5.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/icons/
+    - assets/images/
+
+  fonts:
+    - family: Playwrite
+      fonts:
+        - asset: fonts/PlaywriteFRModerne-VariableFont_wght.ttf
+    - family: Bebas
+      fonts:
+        - asset: fonts/BebasNeue-Regular.ttf
