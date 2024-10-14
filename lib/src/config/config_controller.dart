@@ -7,6 +7,6 @@ class ConfigController extends DisposableInterface {
   }
 
   void exit() {
-    Get.toNamed(AppRoutes.login);
+    Get.offAllNamed(AppRoutes.login);
   }
 }

@@ -11,12 +11,11 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final LoginController controller = Get.find();
     return Scaffold(
-      body: Container(
-        width: double.infinity,
+      body: SizedBox(
         height: double.infinity,
-        alignment: Alignment.bottomCenter,
-        color: Colors.white,
+        width: double.infinity,
         child: Stack(
+          alignment: Alignment.bottomCenter,
           children: [
             SvgPicture.asset(
               "assets/images/whatsapp-symbol-logo-svgrepo-com.svg",

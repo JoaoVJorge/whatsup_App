@@ -1,0 +1,1 @@
+ /home/jorge/Documents/Codes/Flutter/whatsup/.dart_tool/flutter_build/60b13b1ee92444a59ff8ab53c05bbdfb/native_assets.yaml: 

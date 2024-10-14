@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
-import 'package:whatsup/src/add_user/addUser_bindings.dart';
-import 'package:whatsup/src/add_user/addUser_view.dart';
+import 'package:whatsup/src/add_user/add_user_bindings.dart';
+import 'package:whatsup/src/add_user/add_user_view.dart';
 import 'package:whatsup/src/config/config_bindings.dart';
 import 'package:whatsup/src/config/config_view.dart';
 import 'package:whatsup/src/intro/call/call_bindings.dart';
