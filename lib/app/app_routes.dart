@@ -11,6 +11,7 @@ import 'package:whatsup/src/intro/chat/chat_view.dart';
 import 'package:whatsup/src/intro/group/group_bindings.dart';
 import 'package:whatsup/src/intro/group/group_view.dart';
 import 'package:whatsup/src/intro/home/home_bindings.dart';
+import 'package:whatsup/src/intro/home/home_controller.dart';
 import 'package:whatsup/src/intro/home/home_view.dart';
 import 'package:whatsup/src/login/initial/login_bindings.dart';
 import 'package:whatsup/src/login/initial/login_view.dart';
@@ -18,6 +19,8 @@ import 'package:whatsup/src/login/send_code/login_in_bindings.dart';
 import 'package:whatsup/src/login/send_code/login_in_view.dart';
 import 'package:whatsup/src/splash/splash_bindings.dart';
 import 'package:whatsup/src/splash/splash_view.dart';
+
+final HomeController homeController = Get.find();
 
 class AppRoutes {
   static const splash = "/";
@@ -87,13 +90,25 @@ class AppRoutes {
 
     if (route != null) {
       Get.routing.args = settings.arguments;
-      return GetPageRoute(
-        transition: Transition.rightToLeftWithFade,
-        settings: settings,
-        page: route.page,
-        binding: route.binding,
-        transitionDuration: const Duration(milliseconds: 200),
-      );
+      if (homeController.transitionIndex.value == 0) {
+        return GetPageRoute(
+          transition: Transition.rightToLeft,
+          settings: settings,
+          page: route.page,
+          binding: route.binding,
+          transitionDuration: const Duration(milliseconds: 150),
+        );
+      }
+      if (homeController.transitionIndex.value == 1) {
+        return GetPageRoute(
+          transition: Transition.leftToRight,
+          settings: settings,
+          page: route.page,
+          binding: route.binding,
+          transitionDuration: const Duration(milliseconds: 150),
+        );
+      }
+      return null;
     }
     return null;
   }

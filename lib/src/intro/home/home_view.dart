@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
-import 'package:whatsup/app/app_routes.dart';
 import 'package:whatsup/src/intro/home/home_controller.dart';
 import 'package:whatsup/theme/colors.dart';
 
@@ -87,10 +86,7 @@ class AppTopBar extends StatelessWidget {
             children: [
               InkWell(
                 onTap: () {
-                  if (controller.currentRouteIndex.value != 0) {
-                    controller.goToPage(AppRoutes.chat);
-                    controller.setCurrentRouteIndex(0);
-                  }
+                  controller.tapChat();
                 },
                 child: SizedBox(
                   width: MediaQuery.of(context).size.width / 3,
@@ -108,10 +104,7 @@ class AppTopBar extends StatelessWidget {
               ),
               InkWell(
                 onTap: () {
-                  if (controller.currentRouteIndex.value != 1) {
-                    controller.setCurrentRouteIndex(1);
-                    controller.goToPage(AppRoutes.group);
-                  }
+                  controller.tapGroup();
                 },
                 child: SizedBox(
                   width: MediaQuery.of(context).size.width / 3,
@@ -129,10 +122,7 @@ class AppTopBar extends StatelessWidget {
               ),
               InkWell(
                 onTap: () {
-                  if (controller.currentRouteIndex.value != 2) {
-                    controller.setCurrentRouteIndex(2);
-                    controller.goToPage(AppRoutes.call);
-                  }
+                  controller.tapCall();
                 },
                 child: SizedBox(
                   width: MediaQuery.of(context).size.width / 3,

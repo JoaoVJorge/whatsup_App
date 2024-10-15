@@ -70,8 +70,12 @@ class AddUserPage extends StatelessWidget {
                             ),
                           ),
                         ),
-                        onChanged: (value) => ,
+                        onChanged: (value) => controller.validatorUser(value),
                       ),
+                      ElevatedButton(
+                        onPressed: () => controller.validatorUser,
+                        child: const Text("clique"),
+                      )
                     ],
                   ),
                 ),

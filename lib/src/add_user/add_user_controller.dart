@@ -1,3 +1,4 @@
+import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 
 class AddUserController extends DisposableInterface {
@@ -5,13 +6,16 @@ class AddUserController extends DisposableInterface {
     Get.back();
   }
 
-  String? validatorUser(value) {
-    if (value == null || value.isEmpty) {
-      return "Please enter something";
-    } else if (value.length <= 2) {
-      return "Your password need to be at least 2 chracters long";
-    } else if (value.length > 12) {
-      return "Your password need to be at maximum 12 chracters long";
+  Widget? validatorUser(value) {
+    String user = value;
+
+    if (user.isEmpty) {
+      return const Text("Please enter something");
+    } else if (user.length <= 2) {
+      return const Text("Your password need to be at least 2 chracters long");
+    } else if (user.length > 12) {
+      return const Text(
+          "Your password need to be at maximum 12 chracters long");
     }
     return null;
   }
