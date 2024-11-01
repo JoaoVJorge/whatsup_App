@@ -4,6 +4,8 @@ import 'package:whatsup/src/add_user/add_user_bindings.dart';
 import 'package:whatsup/src/add_user/add_user_view.dart';
 import 'package:whatsup/src/config/config_bindings.dart';
 import 'package:whatsup/src/config/config_view.dart';
+import 'package:whatsup/src/conversation/conversation_bindings.dart';
+import 'package:whatsup/src/conversation/conversation_view.dart';
 import 'package:whatsup/src/intro/call/call_bindings.dart';
 import 'package:whatsup/src/intro/call/call_view.dart';
 import 'package:whatsup/src/intro/chat/chat_bindings.dart';
@@ -32,6 +34,7 @@ class AppRoutes {
   static const group = "/group";
   static const call = "/call";
   static const loginin = "/loginin";
+  static const conversation = "/conversation";
 
   static final getPages = [
     GetPage(
@@ -64,6 +67,11 @@ class AppRoutes {
       page: () => const AddUserPage(),
       binding: AddUserBindings(),
     ),
+    GetPage(
+      name: conversation,
+      page: () => const ConversationPage(),
+      binding: ConversationBindings(),
+    )
   ];
   static final getTopBarPages = [
     GetPage(

@@ -179,7 +179,7 @@ class ConfigPage extends StatelessWidget {
               ),
             ),
             InkWell(
-              onTap: () => controller.exit(),
+              onTap: controller.exit,
               child: Container(
                 height: 80,
                 padding: const EdgeInsets.all(20),

@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-import 'package:whatsup/src/intro/group/group_controller.dart';
 import 'package:whatsup/theme/colors.dart';
 
 class GroupPage extends StatelessWidget {
@@ -12,7 +11,6 @@ class GroupPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final GroupController controller = Get.find();
     return Scaffold(
       backgroundColor: Colors.white,
       body: ListView.builder(

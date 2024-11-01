@@ -14,8 +14,10 @@
 /home/jorge/Documents/Codes/Flutter/whatsup/build/linux/x64/debug/bundle/data/flutter_assets/assets/icons/mais.svg
 /home/jorge/Documents/Codes/Flutter/whatsup/build/linux/x64/debug/bundle/data/flutter_assets/assets/icons/procurar.svg
 /home/jorge/Documents/Codes/Flutter/whatsup/build/linux/x64/debug/bundle/data/flutter_assets/assets/icons/seta-para-cima.svg
+/home/jorge/Documents/Codes/Flutter/whatsup/build/linux/x64/debug/bundle/data/flutter_assets/assets/icons/dazzling-star-svgrepo-com.svg
 /home/jorge/Documents/Codes/Flutter/whatsup/build/linux/x64/debug/bundle/data/flutter_assets/assets/icons/do-utilizador.svg
 /home/jorge/Documents/Codes/Flutter/whatsup/build/linux/x64/debug/bundle/data/flutter_assets/assets/icons/angulo-esquerdo.svg
+/home/jorge/Documents/Codes/Flutter/whatsup/build/linux/x64/debug/bundle/data/flutter_assets/assets/icons/phone-svgrepo-com.svg
 /home/jorge/Documents/Codes/Flutter/whatsup/build/linux/x64/debug/bundle/data/flutter_assets/assets/icons/seta-para-baixo.svg
 /home/jorge/Documents/Codes/Flutter/whatsup/build/linux/x64/debug/bundle/data/flutter_assets/assets/icons/chamada-telefonica.svg
 /home/jorge/Documents/Codes/Flutter/whatsup/build/linux/x64/debug/bundle/data/flutter_assets/assets/icons/saida.svg

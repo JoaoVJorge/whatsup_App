@@ -5,4 +5,8 @@ class ChatController extends DisposableInterface {
   Future<void> goAddUser() async {
     Get.toNamed(AppRoutes.adduser);
   }
+
+  Future<void> goConversation() async {
+    Get.toNamed(AppRoutes.conversation);
+  }
 }

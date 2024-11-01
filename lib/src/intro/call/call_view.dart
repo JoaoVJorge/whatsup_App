@@ -5,7 +5,6 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-import 'package:whatsup/src/intro/call/call_controller.dart';
 import 'package:whatsup/theme/colors.dart';
 
 class CallPage extends StatelessWidget {
@@ -13,7 +12,6 @@ class CallPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final CallController controller = Get.find();
     return Scaffold(
       backgroundColor: Colors.white,
       body: ListView.builder(
